@@ -21,8 +21,8 @@ module.exports = (app) => {
         res.send("You have looged out" + req.user);
     });
 
-    app.get("/api/test", (req, res) => {
-        res.send("Ahhh!" + req.user);
-    })
+    app.get('/api/current_user', (req, res) => {
+    res.send(req.user);
+  });
 
 };
