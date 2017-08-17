@@ -22,9 +22,6 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.get("/", (req, res) => {
-    res.send("Hi again from the profile....");
-});
 
 authRoutes(app);//require("./routes/authRoutes")(app);
 
